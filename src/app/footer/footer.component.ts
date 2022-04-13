@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { myInfo } from '../planets';
+
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+
+  @Input() ZWInfo!: myInfo;
+
 
   constructor() { }
 

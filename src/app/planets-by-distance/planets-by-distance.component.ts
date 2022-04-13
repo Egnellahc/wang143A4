@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Planets } from '../planets';
 
 
 @Component({
@@ -8,6 +8,8 @@ import { Input } from '@angular/core';
   styleUrls: ['./planets-by-distance.component.css']
 })
 export class PlanetsByDistanceComponent implements OnInit {
+
+  @Input() planetList!: Planets[];
 
   constructor() { }
 

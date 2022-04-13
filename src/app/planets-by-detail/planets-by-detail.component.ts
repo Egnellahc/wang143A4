@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Planets } from '../planets';
 
 
 @Component({
@@ -8,6 +8,9 @@ import { Input } from '@angular/core';
   styleUrls: ['./planets-by-detail.component.css']
 })
 export class PlanetsByDetailComponent implements OnInit {
+  @Input() planetList!: Planets[];
+
+  
 
   constructor() { }
 

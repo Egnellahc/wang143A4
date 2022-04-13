@@ -1,0 +1,24 @@
+li {
+    background: rgba(0,0,255,0.5); border: thin solid navy;
+    padding: 10px; margin: 0px 10px 5px 10px;
+    list-style-type: none; text-align: center;
+}
+li div {
+    background: bisque;
+}
+
+
+#notes{
+    font-size: 20%;
+}
+
+@media screen 
+and (device-width: 414px)     
+and (device-height : 896px) 
+and (-webkit-device-pixel-ratio : 2){  
+    .gridArea{
+        float: left;
+        width: 50%;
+
+    }
+}

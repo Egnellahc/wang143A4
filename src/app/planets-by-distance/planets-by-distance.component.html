@@ -1,1 +1,19 @@
-<p>planets-by-distance works!</p>
+<div id="background">
+    <section class="gridArea">
+        <div>
+            <h3>Planet By Details</h3>
+            <p id="notes">Test notes</p>
+            <ul>
+                <li *ngFor="let items of planetList; let i = index">
+                    <strong>Planet name: </strong> {{items.planetName}}
+                    <strong>Planet Radius: </strong> {{items.planetRadiusKM}}
+                    <strong>Planet distance from Sun(in millions km): </strong> {{items.distInMillionsKM.fromSun}}
+                    <strong>Planet distance from Earth(in millions km): </strong> {{items.distInMillionsKM.fromEarth}}
+
+                </li>
+            </ul>
+        </div>
+    
+    </section>
+
+</div>

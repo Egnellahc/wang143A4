@@ -1,1 +1,19 @@
-<p>planets-by-detail works!</p>
+<div id="background">
+    <section class="gridArea">
+        <div>
+            <h3>Planet By Details</h3>
+            <p id="notes">Test notes</p>
+            <ul>
+                <li *ngFor="let items of planetList; let i = index">
+                    <strong>Planet name: </strong> {{items.planetName}}
+                    <strong>Planet Color: </strong> {{items.planetColor}}
+                    <strong>Planet planetRadiusKM: </strong> {{items.planetRadiusKM}}
+                    <strong>Planet image: </strong> {{items.image}}
+
+                </li>
+            </ul>
+        </div>
+    
+    </section>
+
+</div>
